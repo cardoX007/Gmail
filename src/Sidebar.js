@@ -5,13 +5,19 @@ import AddIcon from "@material-ui/icons/Add";
 import SidebarOption from "./SidebarOption";
 import InboxIcon from '@material-ui/icons/Inbox';
 import StarIcon from '@material-ui/icons/Star';
+import { useDispatch } from "react-redux"
 import { AccessTime, Duo, ExpandMore,LabelImportant, NearMe, Note, Person, Phone, Star } from '@material-ui/icons'
+import { openSendMessage } from './features/mailSlice';
 function Sidebar() {
+
+    const  dispatch = useDispatch();
+    
     return (
         <div className="sidebar">
             <Button
             startIcon={<AddIcon fontSize="large>" />}
             className="sidebar__compose"
+            onClick={()=> dispatch(openSendMessage())}
             >
                 Compose
             </Button>
