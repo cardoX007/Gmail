@@ -15,6 +15,9 @@
   margin-left: 5px;
 }
 
+/* .header__right > .MuiAvatar-img{
+  cursor: pointer;
+} */
 .header__middle {
   display: flex;
   flex: 0.7;

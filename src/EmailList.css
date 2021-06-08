@@ -20,6 +20,16 @@
   border-bottom: 1px solid whitesmoke;
   z-index: 999;
 }
+
+.emailList::-webkit-scrollbar{
+  display:none;
+
+}
+
+emailList{
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
 .section {
   display: flex;
   align-items: center;
@@ -41,4 +51,7 @@
 .section > h4 {
   font-size: 14px;
   margin-left: 15px;
+}
+.emailList__List{
+  padding-bottom: 20px;
 }

@@ -6,7 +6,7 @@ import SidebarOption from "./SidebarOption";
 import InboxIcon from '@material-ui/icons/Inbox';
 import StarIcon from '@material-ui/icons/Star';
 import { useDispatch } from "react-redux"
-import { AccessTime, Duo, ExpandMore,LabelImportant, NearMe, Note, Person, Phone, Star } from '@material-ui/icons'
+import { AccessTime, Duo, ExpandMore,LabelImportant, NearMe, Note, Person, Phone } from '@material-ui/icons'
 import { openSendMessage } from './features/mailSlice';
 function Sidebar() {
 
